@@ -16,9 +16,9 @@ jobs:
 
       # Step 2: Set up Python environment
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.9"
+          python-version: "3.12"
 
       # Step 3: Install required tools
       - name: Install Build Tools
@@ -32,13 +32,13 @@ jobs:
           from setuptools import setup, find_packages
 
           setup(
-              name='your-package-name',
+              name='ccxt-custom',
               version='0.1.0',
               packages=find_packages(include=['ts*', 'cs*', 'js*', 'php*', 'wiki*']),
               # Adjust metadata as needed
-              description='Your package description',
-              author='Your Name',
-              author_email='your-email@example.com',
+              description='CCXT custom package',
+              author='eq19',
+              author_email='eq19@github.com',
               url='https://github.com/your-repo',
           )
           " > setup.py
@@ -53,4 +53,4 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: dist/*
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
