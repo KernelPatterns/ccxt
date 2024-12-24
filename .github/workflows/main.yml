@@ -1,4 +1,4 @@
-name: Build and Upload Python Wheel to GitHub Release
+name: Upload Python Wheel to GitHub Release
 
 on:
   release:
