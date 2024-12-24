@@ -71,4 +71,5 @@ jobs:
         with:
           asset_name: ${{ env.wheel }}
           asset_path: ./dist/${{ env.wheel }}
+          asset_content_type: application/octet-stream
           upload_url: ${{ github.event.release.upload_url }}
