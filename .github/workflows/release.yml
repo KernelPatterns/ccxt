@@ -67,7 +67,6 @@ jobs:
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1
         with:
-          asset_path: ./${{ env.wheel }}
-          asset_name: ${{ env.basename }}
+          asset_name: ${{ env.wheel }}
+          asset_path: ./dist/${{ env.wheel }}
           upload_url: ${{ github.event.release.upload_url }}
-          asset_content_type: application/octet-stream
