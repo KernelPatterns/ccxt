@@ -38,8 +38,8 @@ jobs:
               # Adjust metadata as needed
               description='CCXT custom package',
               author='eq19',
-              author_email='eq19@github.com',
-              url='https://github.com/your-repo',
+              author_email='eq19@users.noreply.github.com',
+              url='https://github.com/KernelPatterns/ccxt',
           )
           " > setup.py
 
