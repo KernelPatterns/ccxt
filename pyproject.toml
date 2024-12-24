@@ -6,3 +6,20 @@ ignore = ["F722","F841","F821","E402","E501","E902","E713","E741","E714", "E275"
 exclude = [
 "static_dependencies"
 ]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccxt-package-custom"
+version = "0.1.0"
+description = "cctv package custom"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [{name = "eq19", email = "eq19@users-noreply.github.com"}]
+dependencies = []  # Add your package dependencies here
+
+[tool.setuptools.packages.find]
+include = ["ts*", "cs*", "js*", "php*", "wiki*"]
