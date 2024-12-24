@@ -55,7 +55,7 @@ jobs:
       - name: Resolve Wheel Path
         id: resolve_wheel
         run: |
-          WHEEL_FILE=$(ls dist/freqtrade-*.whl | head -n 1)
+          WHEEL_FILE=$(ls dist/ccxt_*.whl | head -n 1)
           if [ -z "$WHEEL_FILE" ]; then
             echo "Wheel file not found in dist/ directory."
             exit 1
