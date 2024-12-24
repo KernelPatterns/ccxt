@@ -18,7 +18,7 @@ description = "cctv package custom"
 readme = "README.md"
 requires-python = ">=3.7"
 license = {text = "MIT"}
-authors = [{name = "eq19", email = "eq19@users-noreply.github.com"}]
+authors = [{name = "eq19", email = "eq19@users.noreply.github.com"}]
 dependencies = []  # Add your package dependencies here
 
 [tool.setuptools.packages.find]
