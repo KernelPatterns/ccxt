@@ -60,7 +60,9 @@ jobs:
             echo "Wheel file not found in dist/ directory."
             exit 1
           fi
-          WHEEL_FILE=basename($WHEEL_PATH)
+
+          # Use basename to extract
+          WHEEL_FILE=$(basename "$WHEEL_PATH")
           echo "Resolved wheel file: $WHEEL_FILE"
           echo 'wheel='$WHEEL_FILE >> ${GITHUB_ENV}
 
